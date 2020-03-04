@@ -3,17 +3,20 @@
 \contentsline {chapter}{\numberline {2}Grundlagen}{4}{chapter.2}
 \contentsline {section}{\numberline {2.1}Physikalische Konzepte}{4}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Kristallstrukturen im Festk\IeC {\"o}rper}{4}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Quantenmechanisches Tunneln}{4}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Piezoelektrischer Effekt}{4}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}Aufbau eines Rastertunnelmikroskops}{4}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Aufbau der Spitze}{4}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Herstellung der Spitze}{4}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Piezomotoren}{4}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Betriebsarten eines Rastertunnelmikroskops}{4}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Topographischer Modus}{4}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Modus konstanter H\IeC {\"o}he}{4}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Spektroskopie}{4}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Probenmaterialien}{4}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Graphit}{4}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Gold}{4}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Molybd\IeC {\"a}nsulfit}{4}{subsection.2.4.3}
+\contentsline {subsubsection}{\nonumberline Kubische Gitter}{4}{section*.2}
+\contentsline {subsubsection}{\nonumberline Hexagonal dichteste Kugelpackung}{5}{section*.3}
+\contentsline {subsubsection}{\nonumberline Graphenstruktur}{5}{section*.4}
+\contentsline {subsection}{\numberline {2.1.2}Quantenmechanisches Tunneln}{6}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Piezoelektrischer Effekt}{6}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Aufbau eines Rastertunnelmikroskops}{6}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Aufbau der Spitze}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Herstellung der Spitze}{6}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Piezomotoren}{6}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Betriebsarten eines Rastertunnelmikroskops}{6}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Topographischer Modus}{6}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Modus konstanter H\IeC {\"o}he}{6}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Spektroskopie}{6}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Probenmaterialien}{6}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Graphit}{6}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Gold}{6}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Molybd\IeC {\"a}nsulfit}{6}{subsection.2.4.3}
