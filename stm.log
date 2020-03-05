@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.5)  4 MAR 2020 11:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.5)  5 MAR 2020 12:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1189,12 +1189,18 @@ File: Abb/quant.jpg Graphic file (type jpg)
 Package pdftex.def Info: Abb/quant.jpg  used on input line 20.
 (pdftex.def)             Requested size: 116.23395pt x 116.53508pt.
 
+LaTeX Warning: Citation `corral' on page 3 undefined on input line 21.
+
+
+LaTeX Warning: Citation `corral' on page 3 undefined on input line 21.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 21--21
 [][]\OT1/cmr/m/n/10.95 Quantum
  []
 
 
-Underfull \hbox (badness 4242) in paragraph at lines 3--24
+Underfull \hbox (badness 4242) in paragraph at lines 3--23
 \OT1/cmr/m/n/10.95 Dies hat we-sent-lich zur Ver-an-schau-li-chung der Quan-ten
 -me-cha-nik bei-ge-tra-gen.
  []
@@ -1224,94 +1230,178 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 4.
-<Abb/kubische_gitter.png, id=119, 1308.89pt x 444.66125pt>
+<Abb/kubische_gitter.png, id=122, 1308.89pt x 444.66125pt>
 File: Abb/kubische_gitter.png Graphic file (type png)
 <use Abb/kubische_gitter.png>
 Package pdftex.def Info: Abb/kubische_gitter.png  used on input line 9.
 (pdftex.def)             Requested size: 376.42744pt x 127.87642pt.
-<Abb/DichtesteKugelpackung.pdf, id=121, 493.70274pt x 326.93042pt>
+<Abb/DichtesteKugelpackung.pdf, id=126, 493.70274pt x 326.93042pt>
 File: Abb/DichtesteKugelpackung.pdf Graphic file (type pdf)
 <use Abb/DichtesteKugelpackung.pdf>
-Package pdftex.def Info: Abb/DichtesteKugelpackung.pdf  used on input line 22.
+Package pdftex.def Info: Abb/DichtesteKugelpackung.pdf  used on input line 21.
 (pdftex.def)             Requested size: 292.7776pt x 193.87999pt.
+<Abb/hcp.png, id=130, 573.14125pt x 539.01375pt>
+File: Abb/hcp.png Graphic file (type png)
+<use Abb/hcp.png>
+Package pdftex.def Info: Abb/hcp.png  used on input line 51.
+(pdftex.def)             Requested size: 167.29967pt x 157.33806pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 [4
 
  <./Abb/kubische_gitter.png>]
-<Abb/hcp.png, id=137, 573.14125pt x 539.01375pt>
-File: Abb/hcp.png Graphic file (type png)
-<use Abb/hcp.png>
-Package pdftex.def Info: Abb/hcp.png  used on input line 55.
-(pdftex.def)             Requested size: 167.29967pt x 157.33806pt.
-<Abb/graphenstruktur.pdf, id=140, 392.59172pt x 368.72757pt>
+<Abb/graphenstruktur.pdf, id=151, 392.59172pt x 368.72757pt>
 File: Abb/graphenstruktur.pdf Graphic file (type pdf)
 <use Abb/graphenstruktur.pdf>
-Package pdftex.def Info: Abb/graphenstruktur.pdf  used on input line 72.
+Package pdftex.def Info: Abb/graphenstruktur.pdf  used on input line 66.
 (pdftex.def)             Requested size: 167.29967pt x 157.13191pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 82.
+(babel)             in language  on input line 75.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 82.
+(babel)             in language  on input line 75.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 83.
+(babel)             in language  on input line 81.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 83.
+(babel)             in language  on input line 81.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 81.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 81.
+ [5 <./Abb/DichtesteKugelpackung.pdf> <./Abb/hcp.png>]
+<Abb/tunnel.pdf, id=515, 77.27188pt x 22.86444pt>
+File: Abb/tunnel.pdf Graphic file (type pdf)
+<use Abb/tunnel.pdf>
+Package pdftex.def Info: Abb/tunnel.pdf  used on input line 87.
+(pdftex.def)             Requested size: 376.42744pt x 111.4143pt.
+
+Overfull \hbox (6.35855pt too wide) in paragraph at lines 83--95
+\OT1/cmr/m/n/10.95 und ein Teil-chen mit der Ener-gie $\OML/cmm/m/it/10.95 E < 
+V[]$\OT1/cmr/m/n/10.95 . Be-nutzt man die sta-ti-on[]are Schr[]odingergleichung
+ 
+ []
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 86.
+(babel)             in language  on input line 115.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 86.
+(babel)             in language  on input line 115.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 115.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 115.
+[6 <./Abb/graphenstruktur.pdf> <./Abb/tunnel.pdf
+
+pdfTeX warning: pdflatex (file ./Abb/tunnel.pdf): PDF inclusion: multiple pdfs 
+with page group included in a single page
+>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 140.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 140.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 140.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 140.
+ [7]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 91.
+(babel)             in language  on input line 142.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 91.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 92.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 92.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 93.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 93.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 95.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 95.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 96.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 96.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 97.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 97.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 98.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 142.
+<Abb/piezo.png, id=539, 431.6125pt x 513.92pt>
+File: Abb/piezo.png Graphic file (type png)
+<use Abb/piezo.png>
+Package pdftex.def Info: Abb/piezo.png  used on input line 145.
+(pdftex.def)             Requested size: 125.47794pt x 149.40154pt.
+
+Overfull \hbox (27.09227pt too wide) in paragraph at lines 146--146
+[][]\OT1/cmr/m/n/10.95 Piezoelektrizit[]at
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 158.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 158.
+<Abb/piezo_anw.png, id=545, 906.38625pt x 429.605pt>
+File: Abb/piezo_anw.png Graphic file (type png)
+<use Abb/piezo_anw.png>
+Package pdftex.def Info: Abb/piezo_anw.png  used on input line 172.
+(pdftex.def)             Requested size: 376.42744pt x 178.41385pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 177.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 177.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 178.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 178.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 179.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 179.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 180.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 180.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 182.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 182.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 183.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 183.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 184.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 184.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 185.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 185.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 187.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 187.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 188.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 188.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 189.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 189.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 190.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 190.
+) (./Kap/quellen.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+
+[8 <./Abb/piezo.png> <./Abb/piezo_anw.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+ [9])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 24.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 24.
@@ -1321,47 +1411,46 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 24.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 24.
- [5 <./Abb/DichtesteKugelpackung.pdf> <./Abb/hcp.png>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 24.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 24.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 24.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 24.
- [6 <./Abb/graphenstruktur.pdf>]
+ [10
+
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
  (./stm.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 24.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
 Package rerunfilecheck Info: File `stm.out' has not changed.
-(rerunfilecheck)             Checksum: F9ECA7170B73CB911AF68401EC52DA6F;1258.
+(rerunfilecheck)             Checksum: 7B0A078DA74B0BEBFEEF6FF7270D3C5A;1263.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
  ) 
 Here is how much of TeX's memory you used:
- 19706 strings out of 494798
- 379579 string characters out of 6176801
- 520548 words of memory out of 5000000
- 22844 multiletter control sequences out of 15000+600000
- 539312 words of font info for 56 fonts, out of 8000000 for 9000
+ 19779 strings out of 494798
+ 380638 string characters out of 6176801
+ 522222 words of memory out of 5000000
+ 22890 multiletter control sequences out of 15000+600000
+ 540241 words of font info for 59 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  41i,13n,66p,10375b,765s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy8.pfb>
-Output written on stm.pdf (6 pages, 372056 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on stm.pdf (10 pages, 573884 bytes).
 PDF statistics:
- 552 PDF objects out of 1000 (max. 8388607)
- 433 compressed objects within 5 object streams
- 34 named destinations out of 1000 (max. 500000)
- 175 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 632 PDF objects out of 1000 (max. 8388607)
+ 493 compressed objects within 5 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 
