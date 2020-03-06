@@ -43,6 +43,7 @@ Die Packungsdichte $ V_{\text{Atome}} / V_{\text{kub. Zelle}} $ ergibt sich somi
     \underset{\text{Volumen des Würfels}}{a^3} \approx 0.74
 \]
 Die dichtest mögliche Kugelpackung nimmt also $74\%$ des Raums ein.
+\newpage
 
         \subsubsection{Hexagonal dichteste Kugelpackung}
 
@@ -76,7 +77,10 @@ sp2-Hybridorbitale verbunden sind. Alle Bindungen sind hierbei gleich lang.
 
 Das Tunneln beschreibt ein quantenmechanischen Effekt, nach dem es für Teilchen
 möglich ist eine Energiebarriere zu überwinden, auch wenn diese eine wesentlich
-höhere Energie als das Teilchen besitzt. Klassisch wäre dies unmöglich.\\
+höhere Energie als das Teilchen besitzt. Klassisch wäre dies unmöglich.
+
+        \subsubsection{Theorie des eindimensionalen Tunneleffekts}
+
 Wir betrachten eine Potentialbarriere 
 \[
     V(x) = V_0 \Theta ( a - |x| )    
@@ -135,14 +139,50 @@ man den handlichen Ausdruck
 \[
     | S(E) |^2 = \exp\left(-4 \sqrt{2m(V_0-E)} \, \frac{a}{\hbar}\right)
 \]
-\cite{schwabl}
-% Tunneleffekt im STM fehlt noch
-\newpage
+
+        \subsubsection{Anwendung im Rastertunnelmikroskop}
+
+Zur Abtastung kommt eine scharfe Metallspitze zum Einsatz, die im Abstand weniger
+Angstrøm über eine leitfähige Probe positioniert wird. Durch eine angelegte 
+Tunnelspannung $U_t$ werden die Fermi-Niveaus der Spitze $E_{F,S}$ und der Probe
+$E_{F,P}$ gegeneinander verschoben, schematisch in Abbildung \ref{tunnelstm} 
+dargestellt.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Abb/tunnel_stm.png}
+    \caption{a) Spitze und Probe werden über eine Spannungsquelle und einen 
+                Strom-Spannungswandler miteinander verbunden. $V_B$ bezeichnet
+                hier die Tunnelspannung, z den Abstand Spitze-Probe.
+             b) Die angelegte Spannung verschiebt die beiden Fermi-Niveaus. Bei 
+                positiver Spannung tunneln Elektronen der Spitze zur Probe.
+             c) Tunneleffekt im STM.
+             \cite{hofmann}}
+    \label{tunnelstm}
+\end{figure}
+Der Strom $I_t$ zwischen Spitze und Probe ist nun von $U_t$ und dem Abstand $z$ 
+abhängig. Das Abstandverhalten kann nun durch den eindimensionalen Tunnelprozess
+hergeleitet werden. Die Höhe der Barriere ist die gemittelte Austrittsarbeit $\Phi$
+des Spitzen- und Probenmaterials, also die nötige Energie Elektronen vom jeweiligen
+Fermi-Niveau auf Vakuumenergie zu heben. Die Breite der Barriere ist der Abstand $z$.
+Typischerweiße ist die angelegte Spannung sehr viel kleiner als $\Phi$, es kann also
+eine rechteckige Barriere angenommen werden. Man erhält also:
+\[
+    I_t = I_0 \cdot e^{-2\kappa z}    
+\]
+$I_0$ gibt hierbei den Strom bei $z=0$ an und $\kappa = \sqrt{2m \Phi}/ \hbar$, mit
+der Elektronenmasse $m$. Für eine typische Austrittsarbeit $\Phi \approx \SI{5}{\eV}$
+errechnet sich $I_t \approx \SI{1}{\per \angstrom}$.\\
+Für Metalle gilt näherungsweiße:
+\[
+    I_t \propto U_t \exp(-c_2 \sqrt{\Phi} z)
+\]
+mit $c_2 = \SI{1,025}{\per\angstrom\per\eV}$.
+\cite{schwabl,hofmann}
 
     \subsection{Piezoelektrischer Effekt}
 
-\begin{wrapfigure}{r}{0.3\textwidth}
-    \includegraphics[width=0.3\textwidth]{Abb/piezo.png}
+\begin{wrapfigure}{r}{0.35\textwidth}
+    \includegraphics[width=0.35\textwidth]{Abb/piezo.png}
     \caption{Piezoelektrizität \cite{phying}}
     \label{piezo}
 \end{wrapfigure}
@@ -175,9 +215,77 @@ gibt hierzu eine Übersicht. \cite{phying}
 \end{figure}
 
 \section{Aufbau eines Rastertunnelmikroskops}
-    \subsection{Aufbau der Spitze}
+    \subsection{Scanner-Einheit}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Abb/scanner.png}
+    \caption{Scanner-Einheit eines STM. \cite{nanosurf}}
+    \label{scan}
+\end{figure}
+In Abbildung \ref{scan} ist der schematische Aufbau der Scanner-Einheit gezeigt.
+Die leitende Spitze wird durch drei Piezos, pro Raumrichtung ein Piezoelement, 
+über der Probe positioniert. Die Längenänderung der Kristalle ist annähernd linear
+zur angelegten Spannung. Dies erlaubt eine einfache Steuerung des Aufbaus.
+
     \subsection{Herstellung der Spitze}
-    \subsection{Piezomotoren}
+
+Eine STM-Spitze sollte sehr fein, dünn und starr sein, gleichzeitig auch keine 
+Oxidation aufweißen, um möglichst gute Ergebnisse zu erzielen. Zur Herstellung 
+wurden demnach zahlreiche Verfahren entwickelt. 
+
+        \subsubsection{Platin-Iridium Spitze}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Abb/pt-ir.png}
+    \caption{Pt-Ir Spitze. \cite{nanosurf}}
+    \label{ptir}
+\end{figure}
+Ein sehr einfaches Verfahren bietet die Platin-Iridium Spitze. Zur Herstellung wird
+ein dünner Draht mit Zangen ruckartig abgerissen.\\
+Die Vorgehensweiße ist in Abbildung \ref{ptirverf} dargestellt. Mit einer Flachzange
+wird ein Ende des Drahtes festgehalten. Mit einem Seitenschneider wird unter sehr 
+spitzem Winkel angesetzt, bis man Kontakt spürt. Dann wird mit dem Seitenschneider
+ruckartig abgerissen.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{Abb/pt-it-verf.png}
+    \caption{Abreißen eines Platin-Iridiumdrahts. \cite{nanosurf}}
+    \label{ptirverf}
+\end{figure}
+Der große Vorteil dieses Verfahrens ist natürlich die Einfachheit der Herstellung.
+Außerdem bietet das Material eine gute Langlebigkeit. Der große Nachteil ist die
+Inhomogenität der Beschaffenheit der Spitzen. Durch das zufällige Abreißen 
+unterscheidet sich natürlich jede Spitze.
+
+        \subsubsection{Wolfram Spitze}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Abb/wolfram.png}
+    \caption{Wolfram Spitze mit Isolation. \cite{wolfram}}
+    \label{wolfram}
+\end{figure}
+Wie in Abbildung \ref{wolfram} zu sehen, sind Wolfram Spitzen wesentlich 
+gleichmäßiger als Platin-Iridium Spitzen. Dies ist eine Folge der Herstellung
+durch elektrochemisches Ätzen. 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Abb/wolf_verf.png}
+    \caption{Elektrochemisches Ätzen von Spitzen}
+    \label{wolf-verf}
+\end{figure}
+Der Aufbau hierzu ist in Abbildung \ref{wolf-verf} zu sehen. In einer KOH-Lösung 
+wandern durch eine angelegte Spannung Wolframatome vom Draht zur Ringelektrode.
+Hierbei muss der Wolframdraht positiv und die Ringelektrode negativ gepolt sein,
+andernfalls würden sich die Atome an den Draht anlagern. Eine typische Spannung 
+ist hier $U \approx \SI{10}{\volt}$. Nach einigen Minuten ist der Wolframdraht
+im Bereich der Elektrode durchgeätzt und die beiden resultierenden Teile können 
+als Spitze verwendet werden.\\
+Der große Vorteil dieses Verfahrens ist die Möglichkeit viele gleichartige Spitzen
+herstellen zu können. Allerdings ist die Herstellung aufwendig. Weiter oxidiert 
+Wolfram an der Luft schnell, was eine längere Lagerung unterbindet.
 
 \section{Betriebsarten eines Rastertunnelmikroskops}
     \subsection{Topographischer Modus}
