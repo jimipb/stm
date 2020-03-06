@@ -5,21 +5,20 @@
 \contentsline {subsection}{\numberline {2.1.1}Kristallstrukturen im Festk\IeC {\"o}rper}{4}{subsection.2.1.1}
 \contentsline {subsubsection}{\nonumberline Kubische Gitter}{4}{section*.2}
 \contentsline {subsubsection}{\nonumberline Hexagonal dichteste Kugelpackung}{5}{section*.3}
-\contentsline {subsubsection}{\nonumberline Graphenstruktur}{5}{section*.4}
-\contentsline {subsection}{\numberline {2.1.2}Quantenmechanischer Tunneleffekt}{6}{subsection.2.1.2}
-\contentsline {subsubsection}{\nonumberline Theorie des eindimensionalen Tunneleffekts}{6}{section*.5}
-\contentsline {subsubsection}{\nonumberline Anwendung im Rastertunnelmikroskop}{7}{section*.6}
+\contentsline {subsection}{\numberline {2.1.2}Quantenmechanischer Tunneleffekt}{5}{subsection.2.1.2}
+\contentsline {subsubsection}{\nonumberline Theorie des eindimensionalen Tunneleffekts}{6}{section*.4}
+\contentsline {subsubsection}{\nonumberline Anwendung im Rastertunnelmikroskop}{7}{section*.5}
 \contentsline {subsection}{\numberline {2.1.3}Piezoelektrischer Effekt}{8}{subsection.2.1.3}
 \contentsline {section}{\numberline {2.2}Aufbau eines Rastertunnelmikroskops}{9}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Scanner-Einheit}{9}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Herstellung der Spitze}{9}{subsection.2.2.2}
-\contentsline {subsubsection}{\nonumberline Platin-Iridium Spitze}{10}{section*.7}
-\contentsline {subsubsection}{\nonumberline Wolfram Spitze}{11}{section*.8}
-\contentsline {section}{\numberline {2.3}Betriebsarten eines Rastertunnelmikroskops}{11}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Topographischer Modus}{11}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Modus konstanter H\IeC {\"o}he}{11}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Spektroskopie}{11}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Probenmaterialien}{11}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Graphit}{11}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Gold}{11}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Molybd\IeC {\"a}nsulfit}{11}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.2.2}Herstellung der Spitze}{10}{subsection.2.2.2}
+\contentsline {subsubsection}{\nonumberline Platin-Iridium Spitze}{10}{section*.6}
+\contentsline {subsubsection}{\nonumberline Wolfram Spitze}{11}{section*.7}
+\contentsline {section}{\numberline {2.3}Betriebsarten eines Rastertunnelmikroskops}{12}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Topographischer Modus}{12}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Modus konstanter H\IeC {\"o}he}{12}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Spektroskopie}{12}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Probenmaterialien}{13}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Graphit}{13}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Gold}{13}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Molybd\IeC {\"a}nsulfit}{13}{subsection.2.4.3}

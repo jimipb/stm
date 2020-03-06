@@ -1,6 +1,7 @@
 \chapter{Grundlagen}
 
 \section{Physikalische Konzepte}
+    %evtl was zu Miller-Indizes?
     \subsection{Kristallstrukturen im Festkörper}
         \subsubsection{Kubische Gitter}
 
@@ -60,20 +61,7 @@ schnell klar wird. In Abbildung \ref{hcp} sind die Stapelfolgen eingezeichnet.
 Die Vektoren $a$ und $b$ sind gleich lang. Für $c$ findet man $c = \sqrt{ 
 \frac{8}{3}} \, a$. In realen Kristallen weicht dies oft etwas ab.
 
-        \subsubsection{Graphenstruktur}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.4\textwidth]{Abb/graphenstruktur.pdf}
-    \caption{Struktur von Graphen \cite{wikigraphen}}
-    \label{graphenstruktur}
-\end{figure}
-In Abbildung \ref{graphenstruktur} ist die Bienenwabenstruktur des Graphens 
-dargestellt. Es handelt sich um eine Atomlage von Kohlenstoffatomen, die durch
-sp2-Hybridorbitale verbunden sind. Alle Bindungen sind hierbei gleich lang.
-\cite{hunklinger}
-
-    \subsection{Quantenmechanischer Tunneleffekt}
+     \subsection{Quantenmechanischer Tunneleffekt}
 
 Das Tunneln beschreibt ein quantenmechanischen Effekt, nach dem es für Teilchen
 möglich ist eine Energiebarriere zu überwinden, auch wenn diese eine wesentlich
@@ -181,8 +169,8 @@ mit $c_2 = \SI{1,025}{\per\angstrom\per\eV}$.
 
     \subsection{Piezoelektrischer Effekt}
 
-\begin{wrapfigure}{r}{0.35\textwidth}
-    \includegraphics[width=0.35\textwidth]{Abb/piezo.png}
+\begin{wrapfigure}{r}{0.45\textwidth}
+    \includegraphics[width=0.45\textwidth]{Abb/piezo.png}
     \caption{Piezoelektrizität \cite{phying}}
     \label{piezo}
 \end{wrapfigure}
@@ -207,7 +195,7 @@ werden.
 \end{itemize}
 Die Anwendungen der Piezoelektrizität sind weitreichend. Abbildung \ref{piezo_anw} 
 gibt hierzu eine Übersicht. \cite{phying}
-\begin{figure}[hb]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{Abb/piezo_anw.png}
     \caption{Anwendung der Piezoelektrizität \cite{phying}}
@@ -248,7 +236,7 @@ Die Vorgehensweiße ist in Abbildung \ref{ptirverf} dargestellt. Mit einer Flach
 wird ein Ende des Drahtes festgehalten. Mit einem Seitenschneider wird unter sehr 
 spitzem Winkel angesetzt, bis man Kontakt spürt. Dann wird mit dem Seitenschneider
 ruckartig abgerissen.
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{Abb/pt-it-verf.png}
     \caption{Abreißen eines Platin-Iridiumdrahts. \cite{nanosurf}}
@@ -270,10 +258,10 @@ unterscheidet sich natürlich jede Spitze.
 Wie in Abbildung \ref{wolfram} zu sehen, sind Wolfram Spitzen wesentlich 
 gleichmäßiger als Platin-Iridium Spitzen. Dies ist eine Folge der Herstellung
 durch elektrochemisches Ätzen. 
-\begin{figure}
+\begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{Abb/wolf_verf.png}
-    \caption{Elektrochemisches Ätzen von Spitzen}
+    \includegraphics[width=0.6\textwidth]{Abb/wolf_verf.png}
+    \caption{Elektrochemisches Ätzen von Spitzen. \cite{beschr}}
     \label{wolf-verf}
 \end{figure}
 Der Aufbau hierzu ist in Abbildung \ref{wolf-verf} zu sehen. In einer KOH-Lösung 
@@ -286,11 +274,62 @@ als Spitze verwendet werden.\\
 Der große Vorteil dieses Verfahrens ist die Möglichkeit viele gleichartige Spitzen
 herstellen zu können. Allerdings ist die Herstellung aufwendig. Weiter oxidiert 
 Wolfram an der Luft schnell, was eine längere Lagerung unterbindet.
+\cite{beschr}
 
 \section{Betriebsarten eines Rastertunnelmikroskops}
     \subsection{Topographischer Modus}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Abb/topo.png}
+    \caption{Topographischer Modus des STM. \cite{beschr}}
+    \label{topo}
+\end{figure}
+Im topographischen Modus folgt die Spitze der Oberflächenbeschaffenheit der Probe,
+wie in Abbildung \ref{topo} skizziert. Der Tunnelstrom soll durch Veränderung der 
+z-Position beim Abrastern konstant gehalten werden. Das eigentliche Messsignal 
+ist dann die Regelspannung des Piezoelements in z-Richtung. Der Nachteil dieser 
+Messmethode ist die langsame Scangeschwindigkeit, die aus der ständigen 
+Nachjustierung der z-Position resultiert.
+
     \subsection{Modus konstanter Höhe}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Abb/konst.png}
+    \caption{Modus konstanter Höhe des STM \cite{beschr}}
+    \label{konst}
+\end{figure}
+In diesem Modus rastert die Spitze mit gleichbleibender z-Position, wie in Abbildung
+\ref{konst} skizziert. So wird der
+sich ändernde Tunnelstrom gemessen und daraus die Oberflächenbeschaffenheit der 
+Probe rekonstruiert. Vorteil hierbei ist die hohe Scangeschwindigkeit. Nachteil
+ist die Kollissionsgefahr, wodurch Spitze und Probe zerstört werden können. Dieser
+Modus wird also nur bei vorheriger Kenntnis der Oberflächenstruktur eingesetzt, um 
+nochmals genauere Messungen durchzuführen. Im Rahmen dieses Versuch wird 
+ausschließlich der topographische Modus verwendet.
+
     \subsection{Spektroskopie}
+
+Die Spektroskopie ermöglicht die Messung der lokalen Zustandsdichten (LDOS) der
+Probe. Hierzu wird die Position der Spitze relativ zur Probe in allen Raumrichtungen
+konstant gehalten. Zusätzlich zur Gleichspannung $U_t$ wird eine Wechselspannung an 
+die Spitze angelegt. Unter Variation der Gleichspannung wird nun der Tunnelstrom
+gemessen. Zur Auswertung wird der Strom $I_t$ nach der Spannung $U(x,y,U)$ 
+aufgetragen. Es gilt:
+\[
+    I_t \propto \int_0^{eU} \rho_P (E_F - eU + \varepsilon) \; 
+                            \rho_S (E_f + \varepsilon) \, d \varepsilon
+\]
+Dabei gibt $\rho_P$ die Zustandsdichte der Probe und $\rho_S$ die der Spitze an.
+Zur Messung von $\rho_P$ muss $\rho_S$ also bekannt sein. Mit $\rho_S$ konstant
+ergibt sich:
+\[
+    \frac{dI}{dU} \propto \rho_P (E_F - eU - \varepsilon)
+\]
+Die Ableitung der Tunnelstroms nach der Spannung ist also proportional zur 
+Zustandsdichten der Probe. 
+\cite{beschr}
 
 \section{Probenmaterialien}
     \subsection{Graphit}
