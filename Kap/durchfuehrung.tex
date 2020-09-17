@@ -22,26 +22,29 @@ Bild wird dann ein möglichst homogener Bereich zur näheren Messung ausgewählt
 Die Neigung der Probe zur Spitze wird parallel in einem Linienprofil gemessen.
 Dies ermöglicht einen Ausgleich, um Verzerrungen im Bild vorzubeugen.
 So entsteht schließlich ein Bild der Oberfläche mit atomarer Auflösung.
+
+Abbildung \ref{topo_graphit} zeigt die Oberfläche im atomaren Bereich.
+Um gute Bilder in dieser Auflösung zu erreichen ist eine gute Spitze, eine
+homogene Oberfläche und viel Geschick nötig.
+In Abbildung \ref{graprof} ist das zur gemessenen Oberfläche gehörige Linienprofil
+in x-Richtung abgebildet. 
+Die zu erkennende Inhomogenität der Oberfläche könnte ein Grund für die 
+geringe Auflösung der Oberflächenmessung sein. Auch könnte eine mangelhafte
+Spitze ein schlechtes Ergebnis verursachen.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{Mess/graphit_oberfl.png}
-    \caption{Topographie von Graphit}
+    \caption{Topographie von Graphit. Das regelmäßige Sechseckmuster ist gut zu erkennen.}
     \label{topo_graphit}
 \end{figure}
-Abbildung \ref{topo_graphit} zeigt die Oberfläche im atomaren Bereich.
-Um gute Bilder in dieser Auflösung zu erreichen ist eine gute Spitze, eine
-homogene Oberfläche und viel Geschick nötig. 
+ 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{Mess/graphit_linienprofil.png}
     \caption{Linienprofil der gemessenen Graphitoberfläche}
     \label{graprof}
 \end{figure}
-In Abbildung \ref{graprof} ist das zur gemessenen Oberfläche gehörige Linienprofil
-in x-Richtung abgebildet. 
-Die zu erkennende Inhomogenität der Oberfläche könnte ein Grund für die 
-geringe Auflösung der Oberflächenmessung sein. Auch könnte eine mangelhafte
-Spitze ein schlechtes Ergebnis verursachen.
+
 
 \subsection{Spektroskopie}
 \paragraph{Strom-Spannungs-Kennlinie}
@@ -52,32 +55,7 @@ Im nächsten Schritt soll die Strom-Spannungs-Kennlinie aufgenommen werden.
 %    \caption{Strom-Spannungs-Kennlinie von Graphit}
 %    \label{graui}
 %\end{figure}
-\begin{figure}[h]
-  \centering
-  \begin{tikzpicture}
-    \begin{axis}[
-            xlabel={Spannung [mV]},
-            ylabel={Tunnelstrom [pA]},
-      %xmin=25,xmax=200,
-      /pgf/number format/1000 sep={},
-      legend pos=north west
-    ]
-    \addplot[ 
-      color = black,
-      mark  = none,
-      thick
-    ] table [
-				%x=verz,y=int,
-        x expr=\thisrowno{0}*10^3,
-        y expr=\thisrowno{1}*10^12
-			]
-    {Mess/strom_spannung_graphit.plt};
-         \addlegendentry{Messwerte}
-       \end{axis}
-  \end{tikzpicture} 
-  \caption{Strom-Spannungskurve von Graphit}
-  \label{graphui}
-\end{figure}
+
 Das Ergebnis der Messung ist in Abbildung \ref{graphui} zu sehen. Die Spannung der 
 Spitze wird von $\SI{-75}{mV}$ bis $\SI{75}{mV}$ variiert. Hier könnte die Spannung
 noch höher gewählt werden, da der maximale Tunnelstrom von $\SI{1}{nA}$ noch nicht
@@ -96,34 +74,7 @@ Spannung variiert.
 %    \caption{Strom-Abstands-Kennlinie von Graphit}
 %    \label{graphdi}
 %\end{figure}
-\begin{figure}[h]
-  \centering
-  \begin{tikzpicture}
-    \begin{axis}[
-            xlabel={Abstand [nm]},
-            ylabel={Tunnelstrom [nA]},
-      %xmin=25,xmax=200,
-      /pgf/number format/1000 sep={},
-      ymode=log,
-      legend pos=north west,
-      ymin=10e-4
-    ]
-    \addplot[ 
-      color = black,
-      mark  = none,
-      thick
-    ] table [
-				%x=verz,y=int,
-        x expr=\thisrowno{0}*10^9,
-        y expr=\thisrowno{1}*10^9
-			]
-    {Mess/strom_abstand_graphit.plt};
-		\addlegendentry{Messwerte}
-    \end{axis}
-  \end{tikzpicture} 
-  \caption{Strom-Abstands-Kennlinie von Graphit logarithmisch aufgetragen}
-  \label{graphdi}
-\end{figure}
+
 Das Ergebnis ist in Abbildung \ref{graphdi} zu sehen. Die y-Achse ist hierbei
 logarithmisch aufgetragen, um den exponentiellen Zusammenhang leichter ersichtlich
 zu machen. Die x-Werte, also der Abstand, werden vom Messprogramm nicht richtig
@@ -136,17 +87,8 @@ Der exponentielle Zusammenhang ist trotzdem zu erkennen.
 \subsection{Vermessung des Graphitgitters}
 Anhand der Oberflächenmessung des Graphits kann noch eine Vermessung dieser
 versucht werden.
-\begin{figure}[h]
-    \begin{subfigure}[c]{0.45\textwidth}
-        \includegraphics[width=\textwidth]{Mess/graphit_gitterkonst.png}
-    \end{subfigure}
-    \begin{subfigure}[c]{0.45\textwidth}
-        \includegraphics[width=\textwidth]{Mess/graphit_gitterkonst2.png}
-    \end{subfigure}
-    \caption{Bestimmung der Gitterkonstante von Graphit}
-    \label{graphgit}
-\end{figure}
-Hierzu wurde mithilfe des Werkzeuge des Messprogramms der Abstand von sechs
+
+Hierzu wurde mithilfe der Werkzeuge des Messprogramms der Abstand von sechs
 Atomen gemessen, zu sehen in Abbildung \ref{graphgit}. Der gemessene Abstand
 beträgt $\SI{919}{pm}$. Im $60^\circ$ Winkel dazu wird diese Messung wiederholt,
 hier werden $\SI{732}{pm}$ gemessen. Auf einem zweiten Bild werden die Werte
@@ -157,28 +99,99 @@ Dies weicht vom Literaturwert $\SI{245}{pm}$ stark ab. Dieser Messfehler kann
 wiederum bei der inhomogene Oberfläche und der Spitze vermutet werden.\par
 Weiter lässt sich der Winkel zwischen den Atomlagen messen, wie in Abbildung
 \ref{graphwinkel} zu sehen. 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\textwidth]{Mess/graphit_winkel.png}
-    \caption{Winkelmessung im Graphit}
-    \label{graphwinkel}
-\end{figure}
+
 Hierbei wird ein Winkel von $57,5^\circ$ gemessen. Diese kleine Abweichung
-kann durch die Inhomogenität der Oberfläche erklärt werden.
+kann evtl. durch den sog. Drift erklärt werden, also durch die thermische Verzerrung von Bauteilen.
 
 \subsection{3D-Darstellung des Gitters}
-Im letzten Schritt sollen mithilfe der WSxM Software einige 3D-Bilder der 
+Im letzten Schritt sollen mithilfe der WSxM \cite{wsxm} Software einige 
+3D-Bilder der 
 Oberfläche erstellt werden. Die Ergebnisse sind in Abbildung \ref{graphit3d}
 zu sehen.
-\begin{figure}[h]
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\begin{axis}[
+	xlabel={Spannung [mV]},
+	ylabel={Tunnelstrom [pA]},
+	%xmin=25,xmax=200,
+	/pgf/number format/1000 sep={},
+	legend pos=north west
+	]
+	\addplot[ 
+	color = black,
+	mark  = none,
+	thick
+	] table [
+	%x=verz,y=int,
+	x expr=\thisrowno{0}*10^3,
+	y expr=\thisrowno{1}*10^12
+	]
+	{Mess/strom_spannung_graphit.plt};
+	\addlegendentry{Messwerte}
+	\end{axis}
+	\end{tikzpicture} 
+	\caption{Strom-Spannungskurve von Graphit, etwas verrauscht, aber dennoch ist der erwartete lineare Zusammenhang deutlich zu erkennen.}
+	\label{graphui}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\begin{axis}[
+	xlabel={Z-Wert der Postion der Spitze [nm]},
+	ylabel={Tunnelstrom [nA]},
+	%xmin=25,xmax=200,
+	/pgf/number format/1000 sep={},
+	ymode=log,
+	legend pos=north west,
+	ymin=10e-4
+	]
+	\addplot[ 
+	color = black,
+	mark  = none,
+	thick
+	] table [
+	%x=verz,y=int,
+	x expr=\thisrowno{0}*10^9,
+	y expr=\thisrowno{1}*10^9
+	]
+	{Mess/strom_abstand_graphit.plt};
+	\addlegendentry{Messwerte}
+	\end{axis}
+	\end{tikzpicture} 
+	\caption{Strom-Abstands-Kennlinie von Graphit logarithmisch aufgetragen. Ab ca. 58,4nm erscheint die Kurve nahezu linear, was bei logarithmischer Skalierung einen exponentiellen Zusammenhang bedeutet.}
+	\label{graphdi}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{subfigure}[c]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{Mess/graphit_gitterkonst.png}
+	\end{subfigure}
+	\begin{subfigure}[c]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{Mess/graphit_gitterkonst2.png}
+	\end{subfigure}
+	\caption{Bestimmung der Gitterkonstante von Graphit}
+	\label{graphgit}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Mess/graphit_winkel.png}
+	\caption{Winkelmessung im Graphit}
+	\label{graphwinkel}
+\end{figure}
+
+\begin{figure}[H]
     \begin{subfigure}[c]{0.5\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Mess/graphit3d.bmp}
+        \includegraphics[width=\textwidth]{Mess/graphit3d.png}
     \end{subfigure}
     \begin{subfigure}[c]{0.5\textwidth}
-        \includegraphics[width=\textwidth]{Mess/graphit3d2.bmp}
+        \includegraphics[width=\textwidth]{Mess/graphit3d2.png}
     \end{subfigure}
-    \caption{3D-Darstellung der Messdaten mithilfe von WSxM}
+    \caption{3D-Darstellung der Messdaten mithilfe von WSxM, links in höherer Vergrößerung. Die Regelmäßige Struktur ist auch hier gut zu erkennen.}
     \label{graphit3d}
 \end{figure}
 
