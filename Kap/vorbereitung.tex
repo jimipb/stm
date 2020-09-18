@@ -115,10 +115,10 @@ eine rechteckige Barriere angenommen werden. Man erhält also:
 \[
     I_t = I_0 \cdot e^{-2\kappa z}    
 \]
-$I_0$ gibt hierbei den Strom am Anfang der Barriere 
-an und $\kappa = \sqrt{2m \Phi}/ \hbar$, mit
-der Elektronenmasse $m$. Für eine typische Austrittsarbeit $\Phi \approx \SI{5}{\eV}$
-errechnet sich $I_t \approx \SI{1}{\per \angstrom}$.\\
+$I_0$ gibt hierbei den Strom bei $z=0$, also den Strom bei Punktkontakt, 
+an und $\kappa = \sqrt{2m \Phi}/ \hbar$ die Abklingkonstante, mit
+der Elektronenmasse $m$. Für eine typische Austrittsarbeit $\Phi = \SI{5}{\eV}$
+errechnet sich $\kappa = \SI{1}{\per \angstrom}$.\\
 Für Metalle gilt näherungsweiße:
 \[
     I_t \propto U_t \exp(-c_2 \sqrt{\Phi} z)
@@ -150,7 +150,7 @@ ruckartig abgerissen.
 Der große Vorteil dieses Verfahrens ist natürlich die Einfachheit der Herstellung.
 Außerdem bietet das Material eine gute Langlebigkeit. Der große Nachteil ist die
 Inhomogenität der Beschaffenheit der Spitzen. Durch das zufällige Abreißen 
-unterscheidet sich natürlich jede Spitze.
+unterscheidet sich natürlich jede Spitze. \cite{nanosurf}, \cite{beschr}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{Abb/pt-it-verf.png}
@@ -203,7 +203,7 @@ werden.
 	$\textbf{P}$. Die resultierende Spannung $U$ liegt wiederum quer an.
 \end{itemize} 
 Der Piezoelektrische Effekt bietet somit also eine hervorragende Möglichkeit z.B. eine Spitze im STM durch Anlegen einer Spannung sehr präzise zu steuern. Die angelegte Spannung bewegt sich hierbei normalerweise in der Größenordnung von etwa $100\si{\volt}$.
-    
+\cite{phying} 
 
         
 
@@ -254,16 +254,23 @@ gemessen. Zur Auswertung wird der Strom $I_t$ nach der Spannung $U(x,y,U)$
 aufgetragen. Es gilt:
 \[
     I_t \propto \int_0^{eU} \rho_P (E_F - eU + \varepsilon) \; 
-                            \rho_S (E_f + \varepsilon) \, d \varepsilon
+                            \rho_S (E_F + \varepsilon) \, d \varepsilon
 \]
 Dabei gibt $\rho_P$ die Zustandsdichte der Probe und $\rho_S$ die der Spitze an.
+$E_F$ steht für die Fermi-Energie und $e$ für die Elementarladung.
 Zur Messung von $\rho_P$ muss $\rho_S$ also bekannt sein. Mit $\rho_S$ konstant
 ergibt sich:
 \[
     \frac{dI}{dU} \propto \rho_P (E_F - eU - \varepsilon)
 \]
-Die Ableitung der Tunnelstroms nach der Spannung ist also proportional zur 
-Zustandsdichten der Probe. 
+Die Ableitung des Tunnelstroms nach der Spannung ist also proportional zur 
+Zustandsdichten der Probe. Dies erlaubt also eine Messung der Zustandsdichte.
+Der im Versuch verwendete Aufbau erlaubt zwei Arten der Spektroskopie. Entweder
+wird, wie oben beschrieben, die Position der Spitze konstant gehalten und der 
+Tunnelstrom gemessen, oder man ändert den Abstand zur Probe, indem der z-Piezo
+angesteuert wird und misst dann den Tunnelstrom. Hier erwartet man einen 
+exponentiellen Abfall des Tunnelstroms mit steigendem Abstand. Im Versuch wird
+letztere Art der Spektroskopie verwendet.
 \cite{beschr}
 
 \section{Interpretation einer STM-Messung}
@@ -375,6 +382,7 @@ Gold besitzt eine kubisch-flächenzentrierte Gitterstruktur (fcc), wovon wir im 
 
 \subsection{Molybdänsulfid}
 Zuletzt wird die Molybdänsulfidprobe gemessen. Hierbei handelt es sich um einen Halbleiter, der aus Schichten besteht, welche eine hexagonal dichteste Kugelpackung bilden (siehe Abb.\ref{mos_struktur}) und an dessen Oberfläche sich ausschließlich Schwefelatome befinden. Der Abstand der Schwefelatome beträgt $3,16\si{\angstrom}$. Theoretisch kann bei $\text{MoS}_{2}$ atomare Auflösung erreicht werden, jedoch gestaltet sich die Mikroskopie aufgrund des höheren Widerstands der Probe allgemein schwieriger.
+\cite{beschr}
 
 \begin{figure}[h]
 	\centering

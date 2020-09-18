@@ -5,7 +5,19 @@
 Da Gold als Leiter eine relativ homogene Elektronenverteilung besitzt, ist hier keine atomare Auflösung möglich. Wir beschränken uns deshalb auf die Topographie, die Spektroskopie und die 3D-Darstellung der Goldoberfläche.
 
 \subsection{Topographie}
-Wir wählten hier einen Scan-Bereich der Seitenlänge $105\si{\nano\meter}$, da ein übermäßiges Zoomen in die Probe, wie oben beschrieben, keinen Sinn macht. Nach nur wenigen Scan-Vorgängen konnten wir schon ein relativ schönes Bild der Goldoberfläche aufnehmen (siehe Abb. \ref{gold_oberfl}), die ein interessantes Höhenprofil aufweist. Dieses Bild kann nun auch genutzt werden, um die Stufenhöhe der Goldprobe zu ermitteln. Dazu wird eine Strecke auf der Oberfläche definiert, zu welcher man sich dann das Höhenprofil anzeigen lassen kann (siehe Abb. \ref{gold_profil}). Wir konnten somit eine Stufenhöhe von ca. $2\si{\angstrom}$ ermitteln, was mit dem Literaturwert von $2,36\si{\angstrom}$ vereinbar ist.
+Wir wählten hier einen Scan-Bereich der Seitenlänge $105\si{\nano\meter}$, da ein übermäßiges Zoomen in die Probe, wie oben beschrieben, keinen Sinn macht. Nach nur wenigen Scan-Vorgängen konnten wir schon ein relativ schönes Bild der Goldoberfläche aufnehmen (siehe Abb. \ref{gold_oberfl}), die ein interessantes Höhenprofil aufweist. Dieses Bild kann nun auch genutzt werden, um die Stufenhöhe der Goldprobe zu ermitteln. Dazu wird eine Strecke auf der Oberfläche definiert, zu welcher man sich dann das Höhenprofil anzeigen lassen kann (siehe Abb. \ref{gold_profil}).
+Im Höhenprofil sind bei den beiden Stufen große Schwankungen zu sehen.
+Als nächstes wurden deshalb einige Werte in homogenen Abständen entnommen, 
+um den Mittelwert und den Fehler zu berechnen. Die Höhe der oberen Stufe
+beträgt $\SI{3,6}{\angstrom} \pm \SI{15}{\percent}$, die der unteren Stufe 
+$\SI{2,0}{\angstrom} \pm \SI{14}{\percent}$. Der Fehler eines STM wird grob mit 
+$\SI{0,1}{nm}$ angegeben. Daraus erhält für die Höhe der Stufe:
+\[
+    h_{Stufe} = \SI{3,6}{\angstrom} \pm \SI{43}{\percent}
+                - \SI{2,0}{\angstrom} \pm \SI{64}{\percent}
+              = \SI{1,6}{\angstrom} \pm \SI{107}{\percent}
+\]
+Der Literaturwert von $\SI{2,36}{\angstrom}$ liegt somit innerhalb der Messtoleranz.
 
 \subsection{Spektroskopie}
 \paragraph{Strom-Spannungs-Kennlinie} Hier wurde im Spektroskopie-Modus die Tunnelspannung im Bereich von $-100\si{\milli\volt}$ bis $100\si{\milli\volt}$ variiert und der resultierende Tunnelstrom aufgetragen, siehe Abb. \ref{uigold} . Auch hier ist das erwartete lineare Verhalten, zwar etwas verrauscht, zu erkennen. Auch hier hält sich der maximale Tunnelstrom deutlich unter dem Grenzwert von $1\si{\nano\ampere}$.
@@ -26,7 +38,7 @@ Analog zur Graphitmessung wurde mit der WSxM Software ein 3D-Bild der Goldoberfl
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\linewidth]{Mess/gold_profil.png}
-		\caption{Messung der Stufenhöhe der Goldoberfläche. Hierzu wurde eine Strecke auf der Oberfläche ausgewählt (siehe linkes Bild, am unteren Rand) und dazu das Höhenprofil geplottet (rechtes Bild). Zu beachten ist, dass die Strecke von rechts nach links verläuft, das rechte Ende der Strecke also höher als das linke Ende liegt. Die Stufenhöhe beträgt ca. $2\si{\angstrom}$ bei einer geschätzten Unsicherheit von ca. $1\si{\angstrom}$.}
+		\caption{Messung der Stufenhöhe der Goldoberfläche. Hierzu wurde eine Strecke auf der Oberfläche ausgewählt (siehe linkes Bild, am unteren Rand) und dazu das Höhenprofil geplottet (rechtes Bild). Zu beachten ist, dass die Strecke von rechts nach links verläuft, das rechte Ende der Strecke also höher als das linke Ende liegt.}
 		\label{gold_profil}
 	\end{center}
 \end{figure}
@@ -67,13 +79,13 @@ Analog zur Graphitmessung wurde mit der WSxM Software ein 3D-Bild der Goldoberfl
 	\centering
 	\begin{tikzpicture}
 	\begin{axis}[
-	xlabel={Abstand [nm]},
+	xlabel={Z-Position der Spitze [nm]},
 	ylabel={Tunnelstrom [nA]},
 	%xmin=25,xmax=200,
 	/pgf/number format/1000 sep={},
-	ymode=log,
+	%ymode=log,
 	legend pos=north west,
-	ymin=10e-4
+	ymin=10e-2
 	]
 	\addplot[ 
 	color = black,
@@ -85,10 +97,12 @@ Analog zur Graphitmessung wurde mit der WSxM Software ein 3D-Bild der Goldoberfl
 	y expr=\thisrowno{1}*10^9
 	]
 	{Mess/golddi.plt};
-	\addlegendentry{Messwerte}
+	\addlegendentry{Messwerte};
+        \addplot[domain=39:39.9, blue, thick]{exp(7.25*(x-39.8)};
+        \addlegendentry{Exp. Fit};
 	\end{axis}
 	\end{tikzpicture} 
-	\caption{Strom-Abstands Kennlinie von Gold logarithmisch aufgetragen. Leider stark verrauscht, ab 39,2nm lässt sich noch ein linearer Abschnitt erahnen, was dem erwarteten exponentiellen Zusammenhang entspricht.}
+	\caption{Strom-Abstands Kennlinie von Gold. Leider stark verrauscht.}
 	\label{uagold}
 \end{figure}
 

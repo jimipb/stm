@@ -90,10 +90,10 @@ versucht werden.
 
 Hierzu wurde mithilfe der Werkzeuge des Messprogramms der Abstand von sechs
 Atomen gemessen, zu sehen in Abbildung \ref{graphgit}. Der gemessene Abstand
-beträgt $\SI{919}{pm}$. Im $60^\circ$ Winkel dazu wird diese Messung wiederholt,
-hier werden $\SI{732}{pm}$ gemessen. Auf einem zweiten Bild werden die Werte
-$\SI{897}{nm}$ und $\SI{798}{nm}$ gemessen. Nimmt man den Mittelwert und teilt
-diesen durch die fünf Atomabstände, so errechnet sich ein Wert von $\SI{167}{pm}$
+beträgt $\SI{850}{pm}$. Im $60^\circ$ Winkel dazu wird diese Messung wiederholt,
+hier werden $\SI{787}{pm}$ gemessen. Auf einem zweiten Bild werden die Werte
+$\SI{927}{nm}$ und $\SI{823}{nm}$ gemessen. Nimmt man den Mittelwert und teilt
+diesen durch die fünf Atomabstände, so errechnet sich ein Wert von $\SI{169}{pm}$
 für den Abstand zweier Atome.
 Dies weicht vom Literaturwert $\SI{245}{pm}$ stark ab. Dieser Messfehler kann 
 wiederum bei der inhomogene Oberfläche und der Spitze vermutet werden.\par
@@ -140,11 +140,11 @@ zu sehen.
 	\centering
 	\begin{tikzpicture}
 	\begin{axis}[
-	xlabel={Z-Wert der Postion der Spitze [nm]},
+	xlabel={Z-Wert der Position der Spitze [nm]},
 	ylabel={Tunnelstrom [nA]},
 	%xmin=25,xmax=200,
 	/pgf/number format/1000 sep={},
-	ymode=log,
+	%ymode=log,
 	legend pos=north west,
 	ymin=10e-4
 	]
@@ -158,10 +158,12 @@ zu sehen.
 	y expr=\thisrowno{1}*10^9
 	]
 	{Mess/strom_abstand_graphit.plt};
-	\addlegendentry{Messwerte}
+	\addlegendentry{Messwerte};
+        \addplot[domain=58:59,blue, thick]{exp(6.67573*(x-58.9238))};
+        \addlegendentry{Exp. Fit};
 	\end{axis}
 	\end{tikzpicture} 
-	\caption{Strom-Abstands-Kennlinie von Graphit logarithmisch aufgetragen. Ab ca. 58,4nm erscheint die Kurve nahezu linear, was bei logarithmischer Skalierung einen exponentiellen Zusammenhang bedeutet.}
+        \caption{Strom-Abstands-Kennlinie von Graphit} 
 	\label{graphdi}
 \end{figure}
 

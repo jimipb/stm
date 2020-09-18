@@ -1,0 +1,561 @@
+
+
+*******************************************************************************
+Fri Sep 18 13:29:52 2020
+
+
+FIT:    data read from "strom_abstand_graphit.plt"
+        format = z
+        #datapoints = 128
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = exp(a*(x+b))+h
+fitted parameters initialized with current variable values
+
+Warning: Initial value of parameter 'h' is zero.
+iter      chisq       delta/lim  lambda   a             b             h            
+   0 1.2800003003e+02   0.00e+00  7.59e-08    1.000000e+00   5.900000e-08   1.000000e-30
+
+Current data point
+=========================
+#               = 1 out of 128
+x               = -6.77801e+06   
+z               = 9.31323e-17    
+
+Current set of parameters
+=========================
+a               = -6.77801e+06   
+b               = -0.201227      
+h               = 1e-30          
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri Sep 18 13:35:02 2020
+
+
+FIT:    data read from "strom_abstand_graphit.plt"
+        format = z
+        #datapoints = 128
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = m*exp(a*x+b)+h
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             h            
+   0 7.0317025634e-17   0.00e+00  5.77e-01    1.000000e+00  -5.900000e-08  -1.000000e+00
+   3 4.9221349165e-18  -2.09e-08  5.77e-04    1.000000e+00  -5.900000e-08  -1.000000e+00
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 4.92213e-18
+rel. change during last iteration : -2.09413e-13
+
+degrees of freedom    (FIT_NDF)                        : 125
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.98437e-10
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.93771e-20
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1                +/- 0.06169      (6.169%)
+b               = -5.9e-08         +/- 2.137e-05    (3.622e+04%)
+h               = -1               +/- 2.137e-05    (0.002137%)
+
+correlation matrix of the fit parameters:
+                a      b      h      
+a               1.000 
+b              -0.075  1.000 
+h               0.074 -1.000  1.000 
+
+
+*******************************************************************************
+Fri Sep 18 13:35:16 2020
+
+
+FIT:    data read from "strom_abstand_graphit.plt"
+        format = z
+        #datapoints = 128
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = m*exp(a*x+b)+h
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             h             m            
+   0 4.9221349165e-18   0.00e+00  7.07e-01    1.000000e+00  -5.900000e-08  -1.000000e+00   1.000000e+00
+   1 4.9221349165e-18   0.00e+00  7.07e-02    1.000000e+00  -5.900000e-08  -1.000000e+00   1.000000e+00
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 4.92213e-18
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 124
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.99235e-10
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.96946e-20
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1                +/- 241.5        (2.415e+04%)
+b               = -5.9e-08         +/- 2.229e-05    (3.778e+04%)
+h               = -1               +/- 241.5        (2.415e+04%)
+m               = 1                +/- 241.5        (2.415e+04%)
+
+correlation matrix of the fit parameters:
+                a      b      h      m      
+a               1.000 
+b               0.271  1.000 
+h               1.000  0.271  1.000 
+m              -1.000 -0.271 -1.000  1.000 
+
+
+*******************************************************************************
+Fri Sep 18 13:37:27 2020
+
+
+FIT:    data read from "strom_abstand_graphit.plt"
+        format = z
+        #datapoints = 128
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*e**x + c
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Fri Sep 18 13:37:41 2020
+
+
+FIT:    data read from "strom_abstand_graphit.plt"
+        format = z
+        #datapoints = 128
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*exp(x) + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             c            
+   0 4.3484159978e-13   0.00e+00  1.00e+00    1.000000e+00  -1.000000e+00
+   3 4.9221349304e-18  -1.98e-04  1.00e-03    1.000000e+00  -1.000000e+00
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 4.92213e-18
+rel. change during last iteration : -1.97951e-09
+
+degrees of freedom    (FIT_NDF)                        : 126
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.97648e-10
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.90646e-20
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1                +/- 0.06127      (6.127%)
+c               = -1               +/- 0.06127      (6.127%)
+
+correlation matrix of the fit parameters:
+                a      c      
+a               1.000 
+c              -1.000  1.000 
+
+
+*******************************************************************************
+Fri Sep 18 13:39:11 2020
+
+
+FIT:    data read from "strom_abstand_graphit.plt"
+        format = z
+        #datapoints = 128
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*exp(x+b)+c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             c            
+   0 1.2545280005e+02   0.00e+00  7.07e-01    1.000000e-02  -1.000000e+00
+   4 1.1431998914e-17  -3.87e-03  7.07e-05    1.009899e-02  -1.009899e-02
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 1.1432e-17
+rel. change during last iteration : -3.8681e-08
+
+degrees of freedom    (FIT_NDF)                        : 126
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.01214e-10
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.07302e-20
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.010099         +/- 0.09338      (924.6%)
+c               = -0.010099        +/- 0.09338      (924.6%)
+
+correlation matrix of the fit parameters:
+                a      c      
+a               1.000 
+c              -1.000  1.000 
+
+
+*******************************************************************************
+Fri Sep 18 13:46:16 2020
+
+
+FIT:    data read from "strom_abstand_graphit.plt"
+        format = z
+        #datapoints = 128
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*exp(b*x)+c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c            
+   0 7.0316712511e-17   0.00e+00  8.16e-01    1.000000e+00   1.000000e+00  -1.000000e+00
+   3 4.9221349304e-18   0.00e+00  8.16e-04    1.000000e+00   1.000000e+00  -1.000000e+00
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 4.92213e-18
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 125
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.98437e-10
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.93771e-20
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1                +/- 158          (1.58e+04%)
+b               = 1                +/- 158          (1.58e+04%)
+c               = -1               +/- 158          (1.58e+04%)
+
+correlation matrix of the fit parameters:
+                a      b      c      
+a               1.000 
+b              -1.000  1.000 
+c              -1.000  1.000  1.000 
+
+
+*******************************************************************************
+Fri Sep 18 13:57:36 2020
+
+
+FIT:    data read from "strom_abstand_graphit.plt"
+        format = z
+        x range restricted to [5.78039e-08 : 5.90539e-08]
+        #datapoints = 128
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*exp(b*(x-d))+c
+fitted parameters initialized with current variable values
+
+Warning: Initial value of parameter 'c' is zero.
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 1.3055405938e-18   0.00e+00  6.94e-08    1.000000e+00   1.000000e+10   1.000000e-30   6.100000e-08
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri Sep 18 13:57:58 2020
+
+
+FIT:    data read from "strom_abstand_graphit.plt"
+        format = z
+        x range restricted to [5.78039e-08 : 5.90539e-08]
+        #datapoints = 128
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*exp(b*(x-d))+c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   b             d            
+   0 2.2217805253e-18   0.00e+00  5.52e-08    6.777454e+09   6.204288e-08
+   4 4.2466987894e-19  -6.47e-01  5.52e-09    6.749888e+09   6.199355e-08
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 4.2467e-19
+rel. change during last iteration : -6.46757e-06
+
+degrees of freedom    (FIT_NDF)                        : 126
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 5.80551e-11
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.3704e-21
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+b               = 6.74989e+09      +/- 2.051e+08    (3.039%)
+d               = 6.19936e-08      +/- 1.145e-10    (0.1846%)
+
+correlation matrix of the fit parameters:
+                b      d      
+b               1.000 
+d              -1.000  1.000 
+
+
+*******************************************************************************
+Fri Sep 18 13:58:14 2020
+
+
+FIT:    data read from "strom_abstand_graphit.plt"
+        format = z
+        x range restricted to [5.78039e-08 : 5.90539e-08]
+        #datapoints = 128
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*exp(b*(x-d))+c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             c            
+   0 4.2466987894e-19   0.00e+00  2.44e-10    9.999585e-01   1.000000e-30
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri Sep 18 13:58:23 2020
+
+
+FIT:    data read from "strom_abstand_graphit.plt"
+        format = z
+        x range restricted to [5.78039e-08 : 5.90539e-08]
+        #datapoints = 128
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*exp(b*(x-d))+c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 4.2466958573e-19   0.00e+00  5.92e-08    1.000097e+00   6.749888e+09   1.001000e-30   6.199355e-08
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri Sep 18 13:58:31 2020
+
+
+FIT:    data read from "strom_abstand_graphit.plt"
+        format = z
+        x range restricted to [5.78039e-08 : 5.90539e-08]
+        #datapoints = 128
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*exp(b*(x-d))+c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c            
+   0 2.2098213588e-18   0.00e+00  2.78e-09    1.000097e+00   6.749792e+09   1.001000e-30
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri Sep 18 13:58:37 2020
+
+
+FIT:    data read from "strom_abstand_graphit.plt"
+        format = z
+        x range restricted to [5.78039e-08 : 5.90539e-08]
+        #datapoints = 128
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*exp(b*(x-d))+c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   b             c             d            
+   0 4.2413287961e-19   0.00e+00  6.76e-08    6.662969e+09   1.002001e-30   6.205560e-08
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri Sep 18 13:58:41 2020
+
+
+FIT:    data read from "strom_abstand_graphit.plt"
+        format = z
+        x range restricted to [5.78039e-08 : 5.90539e-08]
+        #datapoints = 128
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*exp(b*(x-d))+c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   b             d            
+   0 2.1746954064e-18   0.00e+00  5.48e-08    6.662982e+09   6.211763e-08
+   7 4.2411487473e-19  -4.04e-01  5.48e-15    6.675623e+09   6.204956e-08
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 4.24115e-19
+rel. change during last iteration : -4.04453e-06
+
+degrees of freedom    (FIT_NDF)                        : 126
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 5.80172e-11
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.36599e-21
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+b               = 6.67562e+09      +/- 2.027e+08    (3.036%)
+d               = 6.20496e-08      +/- 1.162e-10    (0.1873%)
+
+correlation matrix of the fit parameters:
+                b      d      
+b               1.000 
+d              -1.000  1.000 
+
+
+*******************************************************************************
+Fri Sep 18 13:58:44 2020
+
+
+FIT:    data read from "strom_abstand_graphit.plt"
+        format = z
+        x range restricted to [5.78039e-08 : 5.90539e-08]
+        #datapoints = 128
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*exp(b*(x-d))+c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             c            
+   0 4.2411487473e-19   0.00e+00  2.44e-10    1.153846e+00   1.002001e-30
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri Sep 18 13:58:49 2020
+
+
+FIT:    data read from "strom_abstand_graphit.plt"
+        format = z
+        x range restricted to [5.78039e-08 : 5.90539e-08]
+        #datapoints = 128
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*exp(b*(x-d))+c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a            
+   0 4.2411473976e-19   0.00e+00  3.45e-10    1.153738e+00
+   1 4.2411473976e-19  -4.82e-07  3.45e-11    1.153738e+00
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 4.24115e-19
+rel. change during last iteration : -4.81818e-12
+
+degrees of freedom    (FIT_NDF)                        : 127
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 5.77883e-11
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.33949e-21
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1.15374          +/- 0.01706      (1.479%)
+
+
+*******************************************************************************
+Fri Sep 18 13:58:51 2020
+
+
+FIT:    data read from "strom_abstand_graphit.plt"
+        format = z
+        x range restricted to [5.78039e-08 : 5.90539e-08]
+        #datapoints = 128
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*exp(b*(x-d))+c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c            
+   0 4.2411473976e-19   0.00e+00  0.00e+00    1.003003e-30
+BREAK: Singular matrix in Givens()
+
+*******************************************************************************
+Fri Sep 18 14:01:03 2020
+
+
+FIT:    data read from "strom_abstand_graphit.plt"
+        format = z
+        x range restricted to [5.78039e-08 : 5.90539e-08]
+        #datapoints = 128
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*exp(b*(x-d))+c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c            
+   0 4.2411473976e-19   0.00e+00  0.00e+00    1.004006e-30
+BREAK: Singular matrix in Givens()
+
+*******************************************************************************
+Fri Sep 18 14:20:38 2020
+
+
+FIT:    data read from "strom_abstand_graphit.plt" u ($1*1e9):($2*1e9)
+        format = x:z
+        #datapoints = 128
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*exp(b*(x-c))-d
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c            
+   0 5.7592962490e+00   0.00e+00  3.79e+01    1.000000e+00   1.000000e+01   5.900000e+01
+  12 4.2411475055e-01  -9.78e-02  3.79e-06    1.000017e+00   6.675727e+00   5.892381e+01
+
+After 12 iterations the fit converged.
+final sum of squares of residuals : 0.424115
+rel. change during last iteration : -9.78416e-07
+
+degrees of freedom    (FIT_NDF)                        : 125
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0582488
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00339292
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1.00002          +/- 2.331e+11    (2.331e+13%)
+b               = 6.67573          +/- 0.2048       (3.068%)
+c               = 58.9238          +/- 4.223e+10    (7.168e+10%)
+
+correlation matrix of the fit parameters:
+                a      b      c      
+a               1.000 
+b              -0.230  1.000 
+c               1.000 -0.230  1.000 
+
+
+*******************************************************************************
+Fri Sep 18 14:53:40 2020
+
+
+FIT:    data read from "golddi.plt" u ($1*1e9):($2*1e9)
+        format = x:z
+        x range restricted to [38.6352 : 40.0415]
+        #datapoints = 256
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*exp(b*(x-c))-d
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c            
+   0 9.2183082083e-01   0.00e+00  5.59e+01    1.000017e+00   8.000000e+00   3.980000e+01
+   6 7.9537158366e-01  -3.49e-01  5.59e-05    1.000016e+00   7.247154e+00   3.980856e+01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.795372
+rel. change during last iteration : -3.48874e-06
+
+degrees of freedom    (FIT_NDF)                        : 253
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0560693
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00314376
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1.00002          +/- 1.711e+11    (1.711e+13%)
+b               = 7.24715          +/- 0.1489       (2.054%)
+c               = 39.8086          +/- 2.719e+10    (6.829e+10%)
+
+correlation matrix of the fit parameters:
+                a      b      c      
+a               1.000 
+b              -0.068  1.000 
+c               1.000 -0.068  1.000 
